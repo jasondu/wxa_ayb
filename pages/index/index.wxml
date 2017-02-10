@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--pages/index/index.wxml-->
 <swiper class="swiper_label">
   <block wx:for="{{imgUrls}}">
     <swiper-item>

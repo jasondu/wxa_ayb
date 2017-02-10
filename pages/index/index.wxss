@@ -1,4 +1,4 @@
-/**index.wxss**/
+/* pages/index/index.wxss */
 .swiper_label image {
   height: 400rpx;
   width: 100%;
