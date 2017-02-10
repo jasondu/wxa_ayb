@@ -1,4 +1,5 @@
 <!--pages/address/index.wxml-->
+<form bindsubmit="save" report-submit="{{true}}">
 <view class="weui-cells weui-cells_after-title">
     <view class="weui-cell weui-cell_input">
         <view class="weui-cell__hd">
@@ -34,5 +35,6 @@
     </view>
 </view>
 <view class="weui-btn-area">
-    <button class="weui-btn" type="primary" bindtap="showTopTips">保存地址</button>
+    <button class="weui-btn" type="primary" formType="submit">保存地址</button>
 </view>
+</form>
