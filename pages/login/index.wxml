@@ -5,10 +5,10 @@
             <view class="weui-label">手机号</view>
         </view>
         <view class="weui-cell__bd">
-            <input class="weui-input" type="number" focus placeholder="请输入手机号" />
+            <input class="weui-input" type="number" focus placeholder="请输入手机号" bindblur="setPhone" />
         </view>
         <view class="weui-cell__ft">
-            <view class="weui-vcode-btn">获取验证码</view>
+            <view class="weui-vcode-btn" bindtap="send" data-status="0">{{sendStatus == 0 ? '获取验证码' : sendTime}}</view>
         </view>
     </view>
     <view class="weui-cell weui-cell_input">
@@ -16,10 +16,10 @@
             <view class="weui-label">验证码</view>
         </view>
         <view class="weui-cell__bd">
-            <input class="weui-input" type="number" placeholder="请输入验证码" />
+            <input class="weui-input" type="number" placeholder="请输入验证码" bindblur="setVerifycode" />
         </view>
     </view>
 </view>
 <view class="weui-btn-area">
-    <button class="weui-btn" type="primary" bindtap="showTopTips">登录</button>
+    <button class="weui-btn" type="primary" bindtap="verify" loading="{{btnLoading}}">登录</button>
 </view>
