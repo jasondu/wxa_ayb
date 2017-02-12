@@ -1,0 +1,65 @@
+/* pages/address_list/index.wxss */
+page {
+    background-color: #f3f3f3;
+}
+.list {
+    padding: 20rpx 0;
+    display: flex;
+    background-color: #ffffff;
+}
+.list-hover {
+    background-color: #f7f7f7;
+}
+.list .star_label {
+    position: relative;
+    width: 50rpx;
+    padding: 0 10rpx;
+}
+.list .star_label .icon, .list .edit_label .icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+.list .edit_label {
+    position: relative;
+    width: 60rpx;
+    padding: 0 10rpx;
+    border-left: 1rpx solid #eeeeee;
+}
+.list .text_label {
+    flex: 1;
+    padding-right: 20rpx;
+}
+.list text.title {
+    display: block;
+}
+.list .title {
+    font-size: 30rpx;
+    line-height: 40rpx;
+    font-weight: 400;
+}
+.list .sub_title {
+    font-size: 25rpx;
+    line-height: 35rpx;
+    color: #666666;
+    display: flex;
+}
+
+
+.star_label .icon {
+    height: 50rpx;
+    width: 50rpx;
+}
+.edit_label .icon {
+    height: 30rpx;
+    width: 30rpx;
+}
+.f_l {
+    flex: 1;
+    text-align: left;
+}
+.f_r {
+    flex: 1;
+    text-align: right;
+}

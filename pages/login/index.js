@@ -52,20 +52,17 @@ Page({
       });
       return;
     }
-    AV.User.loginWithWeapp().then(user => {
-      debugger;
-      AV.User.verifyMobilePhone(verifycode).then(() => {
-        //验证成功
-        wx.showModal({
-          title: '温馨提示',
-          content: '验证成功'
-        });
-      }, (err) => {
-        //验证失败
-        console.log(err);
-        this.setData({
-          btnLoading: false
-        });
+    AV.User.verifyMobilePhone(verifycode).then(() => {
+      //验证成功
+      wx.showModal({
+        title: '温馨提示',
+        content: '验证成功'
+      });
+    }, (err) => {
+      //验证失败
+      console.log(err);
+      this.setData({
+        btnLoading: false
       });
     });
   },

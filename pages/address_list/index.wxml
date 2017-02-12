@@ -1,0 +1,17 @@
+<!--pages/address_list/index.wxml-->
+<view class="list" hover-class="list-hover" hover-stay-time="50" hover>
+    <view class="star_label">
+        <image class="icon" src="../../images/star-active.png"></image>
+    </view>
+    <view class="text_label">
+        <text class="title">地名</text>
+        <text class="sub_title">详细地址</text>
+        <view class="sub_title">
+            <text class="f_l">杜广伟</text>
+            <text class="f_r">15899891962</text>
+        </view>
+    </view>
+    <view class="edit_label">
+        <image class="icon" src="../../images/edit.png"></image>
+    </view>
+</view>
