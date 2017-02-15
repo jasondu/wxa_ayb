@@ -1,7 +1,9 @@
 <!--pages/address_list/index.wxml-->
+<block wx:for="{{[1, 2, 3]}}">
 <view class="list" hover-class="list-hover" hover-stay-time="50" hover>
     <view class="star_label">
-        <image class="icon" src="../../images/star-active.png"></image>
+        <image class="icon" wx:if="{{first}}" src="../../images/star-active.png"></image>
+        <image class="icon" wx:if="{{!first}}" src="../../images/star.png"></image>
     </view>
     <view class="text_label">
         <text class="title">地名</text>
@@ -11,7 +13,12 @@
             <text class="f_r">15899891962</text>
         </view>
     </view>
-    <view class="edit_label">
+    <view class="edit_label" bindtap="addAddress">
         <image class="icon" src="../../images/edit.png"></image>
     </view>
+</view>
+</block>
+
+<view class="fix_btn">
+    <button hover-class="hover_btn" bindtap="addAddress">添加</button>
 </view>

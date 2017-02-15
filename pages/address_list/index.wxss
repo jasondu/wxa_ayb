@@ -3,9 +3,19 @@ page {
     background-color: #f3f3f3;
 }
 .list {
+    position: relative;
     padding: 20rpx 0;
     display: flex;
     background-color: #ffffff;
+}
+.list::after {
+    display: block;
+    position: absolute;
+    content: ' ';
+    border-top: 1rpx solid #f7f7f7;
+    left: 50rpx;
+    width: 700rpx;
+    bottom: 0;
 }
 .list-hover {
     background-color: #f7f7f7;
@@ -62,4 +72,21 @@ page {
 .f_r {
     flex: 1;
     text-align: right;
+}
+
+.fix_btn {
+    position: fixed;
+    bottom: 0;
+    padding: 10rpx;
+    width: 100%;
+    box-sizing: border-box;
+}
+.fix_btn button {
+    width: 100%;
+    background-color: #418af7;
+    color: #ffffff;
+}
+.fix_btn .hover_btn {
+    background-color: #418af7;
+    color: #ffffff;
 }
