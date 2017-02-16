@@ -1,40 +1,43 @@
 <!--pages/address/index.wxml-->
+<view class="msg_dialog" wx:if="{{errorText}}">
+    <text>请输入{{errorText}}</text>
+</view>
 <form bindsubmit="save" report-submit="{{true}}">
-<view class="weui-cells weui-cells_after-title">
-    <view class="weui-cell weui-cell_input">
-        <view class="weui-cell__hd">
-            <view class="weui-label">联系人</view>
+    <view class="weui-cells weui-cells_after-title">    
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">联系人</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" name="name" type="text" placeholder="请输入联系人" value="{{name}}" />
+            </view>
         </view>
-        <view class="weui-cell__bd">
-            <input class="weui-input" type="text" placeholder="请输入联系人" focus />
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">手机号码</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" name="tel" type="number" placeholder="请输入手机号码" value="{{tel}}"/>
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">服务地址</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" name="address" type="text" placeholder="请输入服务地址" bindfocus="getAddress" value="{{address}}" />
+            </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+                <view class="weui-label">地址详情</view>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" name="address_detail" type="text" placeholder="请输入地址详情" value="{{address_detail}}" />
+            </view>
         </view>
     </view>
-    <view class="weui-cell weui-cell_input">
-        <view class="weui-cell__hd">
-            <view class="weui-label">手机号码</view>
-        </view>
-        <view class="weui-cell__bd">
-            <input class="weui-input" type="number" placeholder="请输入手机号码" />
-        </view>
+    <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" formType="submit">保存地址</button>
     </view>
-    <view class="weui-cell weui-cell_input">
-        <view class="weui-cell__hd">
-            <view class="weui-label">服务地址</view>
-        </view>
-        <view class="weui-cell__bd">
-            <input class="weui-input" type="text" placeholder="请输入服务地址" bindfocus="getAddress" value="{{address}}" />
-        </view>
-    </view>
-    <view class="weui-cell weui-cell_input">
-        <view class="weui-cell__hd">
-            <view class="weui-label">地址详情</view>
-        </view>
-        <view class="weui-cell__bd">
-            <input class="weui-input" type="text" placeholder="请输入地址详情" value="{{addressDetail}}" />
-        </view>
-    </view>
-</view>
-<view class="weui-btn-area">
-    <button class="weui-btn" type="primary" formType="submit">保存地址</button>
-</view>
 </form>

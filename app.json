@@ -1,8 +1,9 @@
 {
   "pages": [
+    
     "pages/address_list/index",
-    "pages/login/index",
     "pages/address/index",
+    "pages/login/index",
     
     "pages/index/index"
   ],
