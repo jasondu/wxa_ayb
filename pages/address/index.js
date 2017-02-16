@@ -102,8 +102,6 @@ Page({
       address.set(formValue);
       address.save().then(function (item) {
         console.log('objectId is ' + item.id);
-        var app = getApp();
-        app.mustUpdate = true;
         wx.navigateBack();
       }, function (error) {
         console.error(error);

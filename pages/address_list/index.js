@@ -10,14 +10,14 @@ Page({
   },
   onReady:function(){
     // 页面渲染完成
+  },
+  onShow:function(){
+    // 页面显示
     new Query('Address')
       .descending('createdAt')
       .find()
       .then(address => this.setData({ address }))
       .catch(console.error);
-  },
-  onShow:function(){
-    // 页面显示
   },
   onHide:function(){
     // 页面隐藏
