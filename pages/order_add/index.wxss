@@ -1,0 +1,14 @@
+/* pages/order_add/index.wxss */
+.address_select {
+    padding: 3px;
+    background: #fff url(//static.daojia.com/fe/h5/djh5/css/images/wenli_xinfeng_f0aade5.png) 0 0;
+    background-size: 33px;
+    color: #292d33;
+    border-bottom: 10px solid #f1f2f6;
+}
+.box {
+    position: relative;
+    padding: 17px 20px 17px 53px;
+    line-height: 20px;
+    background-color: #fffaf3;
+}

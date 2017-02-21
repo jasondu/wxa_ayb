@@ -1,6 +1,6 @@
 {
   "pages": [
-    
+    "pages/order_add/index",
     "pages/address_list/index",
     "pages/address/index",
     "pages/login/index",
