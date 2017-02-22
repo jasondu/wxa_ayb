@@ -1,2 +1,3 @@
 /**app.wxss**/
-@import '/libs/style/weui.wxss';
+@import '/libs/weui/weui.wxss';
+@import '/libs/style/index.wxss';

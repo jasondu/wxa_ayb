@@ -12,3 +12,6 @@
     line-height: 20px;
     background-color: #fffaf3;
 }
+.box .iconfont-address {
+    margin-left: -30rpx;
+}

@@ -2,7 +2,7 @@
 
 <view class="address_select">
     <view class="box">
-        <i class="icon_f"></i>
+        <view class="iconfont iconfont-address"></view>
         <div class="addr" style="color: #aaa">请选择服务地点</div>
         <i id="icon_more" class="icon_more"></i>
     </view>
