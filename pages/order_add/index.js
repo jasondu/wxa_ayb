@@ -1,6 +1,9 @@
 // pages/order_add/index.js
 Page({
-  data:{},
+  data:{
+    address: '',
+    tel: ''
+  },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
   },
@@ -9,11 +12,27 @@ Page({
   },
   onShow:function(){
     // 页面显示
+    var app = getApp();
+    if (typeof app.address !== 'undefined' && typeof app.tel !== 'undefined') {
+      this.setData({
+        address: app.address,
+        tel: app.tel
+      })
+    }
   },
   onHide:function(){
     // 页面隐藏
   },
   onUnload:function(){
     // 页面关闭
+  },
+
+  selectAddress: function () {
+    wx.navigateTo({
+      url: '/pages/address_list/index'
+    })
+  },
+  selectTime: function () {
+    
   }
 })

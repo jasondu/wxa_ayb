@@ -1,3 +1,22 @@
 /**app.wxss**/
 @import '/libs/weui/weui.wxss';
 @import '/libs/style/index.wxss';
+page {
+    background-color:#f3f3f3;
+}
+.fix_btn {
+    position: fixed;
+    bottom: 0;
+    padding: 10rpx;
+    width: 100%;
+    box-sizing: border-box;
+}
+.fix_btn button {
+    width: 100%;
+    background-color: #418af7;
+    color: #ffffff;
+}
+.fix_btn .hover_btn {
+    background-color: #418af7;
+    color: #ffffff;
+}

@@ -1,6 +1,10 @@
 <!--pages/address_list/index.wxml-->
 <block wx:for="{{address}}" wx:key="objectId">
-<view class="list" hover-class="list-hover" hover-stay-time="50" hover>
+<view class="list" hover-class="list-hover" hover-stay-time="50" hover 
+bindtap="selectAdress" 
+data-id="{{item.objectId}}"
+data-address="{{item.address}}"
+data-tel="{{item.tel}}">
     <view class="star_label">
         <image class="icon" wx:if="{{first}}" src="../../images/star-active.png"></image>
         <image class="icon" wx:if="{{!first}}" src="../../images/star.png"></image>
@@ -13,7 +17,7 @@
             <text class="f_r">{{item.tel}}</text>
         </view>
     </view>
-    <view class="edit_label" bindtap="editAddress" data-id="{{item.objectId}}">
+    <view class="edit_label" catchtap="editAddress" data-id="{{item.objectId}}">
         <image class="icon" src="../../images/edit.png"></image>
     </view>
 </view>

@@ -1,17 +1,42 @@
 /* pages/order_add/index.wxss */
 .address_select {
-    padding: 3px;
     background: #fff url(//static.daojia.com/fe/h5/djh5/css/images/wenli_xinfeng_f0aade5.png) 0 0;
     background-size: 33px;
-    color: #292d33;
+}
+.select {
+    padding: 3px;
+    color: #aaa;
     border-bottom: 10px solid #f1f2f6;
+    background-color: #ffffff;
+}
+.select-hover {
+    opacity: 0.8;
+}
+.last_select {
+    border: none;
+}
+.select .text {
+    overflow: hidden;
+}
+.select text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    color: #292d33;
+}
+.select .iconfont {
+    display: flex;
+    align-items: center;
+}
+.address_select .box {
+    background-color: #fffaf3;
 }
 .box {
     position: relative;
-    padding: 17px 20px 17px 53px;
+    padding: 17px 20px 17px 20px;
     line-height: 20px;
-    background-color: #fffaf3;
 }
-.box .iconfont-address {
-    margin-left: -30rpx;
+.box .text {
+    padding: 0 10rpx;
 }

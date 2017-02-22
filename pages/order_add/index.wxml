@@ -1,9 +1,24 @@
 <!--pages/order_add/index.wxml-->
 
-<view class="address_select">
-    <view class="box">
+<view class="select address_select" hover-class="select-hover" hover-stay-time="50" bindtap="selectAddress" hover>
+    <view class="box weui-flex">
         <view class="iconfont iconfont-address"></view>
-        <div class="addr" style="color: #aaa">请选择服务地点</div>
-        <i id="icon_more" class="icon_more"></i>
+        <view class="text weui-flex__item" wx:if="{{!address}}">请选择服务地点</view>
+        <view class="text weui-flex__item" wx:if="{{address}}">
+            <text>{{address}}</text>
+            <text>{{tel}}</text>
+        </view>
+        <view class="iconfont iconfont-go"></view>
     </view>
+</view>
+<view class="select last_select" hover-class="select-hover" hover-stay-time="50" bindtap="selectTime" hover>
+    <view class="box weui-flex">
+        <view class="iconfont iconfont-time"></view>
+        <view class="text weui-flex__item">请选择服务时间</view>
+        <view class="iconfont iconfont-go"></view>
+    </view>
+</view>
+
+<view class="fix_btn">
+    <button hover-class="hover_btn">下一步</button>
 </view>

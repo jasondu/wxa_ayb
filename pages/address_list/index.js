@@ -35,5 +35,12 @@ Page({
     wx.navigateTo({
       url: '/pages/address/index?status=add'
     })
+  },
+  selectAdress: function (e) {
+    var dataset = e.currentTarget.dataset;
+    var app = getApp();
+    app.address = dataset.address;
+    app.tel = dataset.tel;
+    wx.navigateBack();
   }
 })
