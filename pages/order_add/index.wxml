@@ -4,17 +4,40 @@
     <view class="box weui-flex">
         <view class="iconfont iconfont-address"></view>
         <view class="text weui-flex__item" wx:if="{{!address}}">请选择服务地点</view>
-        <view class="text weui-flex__item" wx:if="{{address}}">
+        <view class="text text_ok weui-flex__item" wx:if="{{address}}">
             <text>{{address}}</text>
             <text>{{tel}}</text>
         </view>
         <view class="iconfont iconfont-go"></view>
     </view>
 </view>
+<view class="select" hover-class="select-hover" hover-stay-time="50" bindtap="selectTime" hover>
+    <view class="box weui-flex">
+        <view class="iconfont iconfont-time"></view>
+        <!--<view class="text weui-flex__item">请选择服务时间</view>-->
+        <picker class="text weui-flex__item" mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view wx:if="{{date}}" class="text_ok">
+                选择日期: {{date}}
+            </view>
+            <view wx:if="{{!date}}">
+                选择日期: {{date}}
+            </view>
+        </picker>
+        <view class="iconfont iconfont-go"></view>
+    </view>
+</view>
 <view class="select last_select" hover-class="select-hover" hover-stay-time="50" bindtap="selectTime" hover>
     <view class="box weui-flex">
         <view class="iconfont iconfont-time"></view>
-        <view class="text weui-flex__item">请选择服务时间</view>
+        <!--<view class="text weui-flex__item">请选择服务时间</view>-->
+        <picker class="text weui-flex__item" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+            <view wx:if="{{time}}" class="text_ok">
+                选择时间: {{time}}
+            </view>
+            <view wx:if="{{!time}}">
+                选择时间: {{time}}
+            </view>
+        </picker>
         <view class="iconfont iconfont-go"></view>
     </view>
 </view>

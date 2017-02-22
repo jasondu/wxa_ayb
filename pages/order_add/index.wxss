@@ -18,12 +18,14 @@
 .select .text {
     overflow: hidden;
 }
+.select .text_ok {
+    color: #292d33;
+}
 .select text {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     display: block;
-    color: #292d33;
 }
 .select .iconfont {
     display: flex;
