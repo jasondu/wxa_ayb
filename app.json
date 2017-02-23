@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/order_list/index",
     "pages/order_add/index",
     "pages/address_list/index",
     "pages/address/index",
@@ -10,7 +11,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#418af7",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "阿姨帮",
     "navigationBarTextStyle": "white",
     "backgroundColor": "#418af7"
   },
